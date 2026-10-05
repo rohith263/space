@@ -1,0 +1,6 @@
+{
+  "name": "CasaRico - Space Interiors India",
+  "description": "Premium Redesign for Space Interiors India, offering luxury interior design solutions in Hyderabad.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
