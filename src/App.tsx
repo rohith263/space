@@ -20,12 +20,18 @@ import {
   Layers
 } from 'lucide-react';
 
+import heroImg from './assets/images/hero_living_tv_wall_1791203848436.jpg';
+import bedroomImg from './assets/images/project_luxury_bedroom_1791203861595.jpg';
+import kitchenImg from './assets/images/project_modular_kitchen_1791203876177.jpg';
+import balconyImg from './assets/images/project_balcony_terrace_1791203886367.jpg';
+import officeImg from './assets/images/project_office_texture_wall_1791203897394.jpg';
+
 const IMAGES = {
-  hero: "/src/assets/images/hero_living_tv_wall_1791203848436.jpg",
-  bedroom: "/src/assets/images/project_luxury_bedroom_1791203861595.jpg",
-  kitchen: "/src/assets/images/project_modular_kitchen_1791203876177.jpg",
-  balcony: "/src/assets/images/project_balcony_terrace_1791203886367.jpg",
-  office: "/src/assets/images/project_office_texture_wall_1791203897394.jpg"
+  hero: heroImg,
+  bedroom: bedroomImg,
+  kitchen: kitchenImg,
+  balcony: balconyImg,
+  office: officeImg
 };
 
 interface Project {
