@@ -279,8 +279,6 @@ export default function App() {
     message: ''
   });
 
-  // Disclaimer acknowledgment
-  const [showDisclaimer, setShowDisclaimer] = useState(true);
 
   // Monitor scroll for nav styling
   useEffect(() => {
@@ -473,30 +471,6 @@ export default function App() {
         </div>
       )}
 
-      {/* Floating Demo Disclaimer / Warning Note */}
-      {showDisclaimer && (
-        <div className="fixed bottom-20 left-4 right-4 md:left-8 md:right-auto md:max-w-md bg-white border-l-2 border-[#9A7B52] p-4 z-40 rounded shadow-2xl flex items-start gap-3 transition-opacity">
-          <div className="p-1 bg-[#9A7B52]/10 text-[#9A7B52] rounded">
-            <Star size={16} />
-          </div>
-          <div className="flex-1 text-xs">
-            <p className="font-semibold text-[#111111] uppercase tracking-wider mb-1 text-[10px]">CLIENT SALES DEMO NOTE</p>
-            <p className="text-[#111111]/75 leading-relaxed text-[11px]">
-              This redesign features the stats <span className="text-[#9A7B52] font-semibold">23+ Years</span> of Experience, <span className="text-[#9A7B52] font-semibold">5,000+ Completed Projects</span>, and <span className="text-[#9A7B52] font-semibold">50 Designers</span>. 
-              Please confirm these with Space Interiors India before taking the website live.
-            </p>
-            <button 
-              onClick={() => setShowDisclaimer(false)}
-              className="mt-2 text-[10px] text-[#9A7B52] hover:underline font-bold uppercase tracking-widest"
-            >
-              Dismiss Note
-            </button>
-          </div>
-          <button onClick={() => setShowDisclaimer(false)} className="text-black/30 hover:text-black">
-            <X size={14} />
-          </button>
-        </div>
-      )}
 
       {/* SECTION 7: HERO SECTION (LUXURY DARK EDITORIAL BACKDROP) */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
